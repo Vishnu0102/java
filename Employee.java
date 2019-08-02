@@ -1,4 +1,4 @@
-package com.cluster.sort.employee.comparator;
+package com.cluster.search;
 
 /**
  *  Cluster Software Solutions.
@@ -6,6 +6,7 @@ package com.cluster.sort.employee.comparator;
  *  www.clusterindia.com)
  */
 public class Employee  {
+	
 	private int employeeId;
 	private String name;
 	private String phone;
@@ -36,4 +37,40 @@ public class Employee  {
 		this.email = email;
 	}
 	
+	
+	/*	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
+		if (employeeId != other.employeeId)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		if (phone == null) {
+			if (other.phone != null)
+				return false;
+		} else if (!phone.equals(other.phone))
+			return false;
+		return true;
+	}
+*/	
+/*	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", name=" + name
+				+ ", phone=" + phone + ", email=" + email + "]";
+	}
+*/	
 }
